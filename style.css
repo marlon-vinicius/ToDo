@@ -1,0 +1,111 @@
+/* Geral */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    color: #333;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/img.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+button {
+    background-color: #fdfdfd;
+    color: #102f5e;
+    border: 2px solid #102f5e;
+    padding: .3rem .6rem;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: #102f5e;
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff
+}
+button i {
+    color: #102f5e;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+}
+
+/* Todo header */
+
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    background-color: #fdfdfd;
+    padding: 1.5rem;
+    border-radius: 15px;
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px #ccc;
+}
+
+/* Todo Form */
+
+#todo-form  {
+    padding:  1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+#todo-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.campo-form {
+    display: flex;
+}
+
+.campo-form input {
+    margin-right: 0.3rem;
+}
+
+/* Todo List*/
+
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: 0.9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.feito {
+    background-color: #395169;
+}
+
+.feito h3 {
+    color: #fff;
+    text-decoration: line-through;
+    font-style: italic;
+}
